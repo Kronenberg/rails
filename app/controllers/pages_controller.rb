@@ -7,11 +7,13 @@ class PagesController < ApplicationController
 
   def home
     @pageTitle = 'Home page'
+    puts Cowsay.say("Home page", "Cow")
     puts "Home page initialize"
   end
 
   def about
     @pageTitle = 'About page'
+    puts Cowsay.say("About page", "Cow")
     puts "About page initialize"
   end
 end
